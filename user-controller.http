@@ -1,0 +1,36 @@
+
+# # POST http://localhost:3000/api/users
+# # Content-Type: application/json
+
+# # {
+# #     "name":"ihsan",
+# #     "username": "username2",
+# #     "password": "password"
+# # }
+
+# # Login user and get authentication token
+# POST http://localhost:3000/api/users/login
+# Content-Type: application/json
+
+# {
+#     "username": "username2",
+#     "password": "password"
+# }
+
+# # # Get current user information
+# # GET http://localhost:3000/api/users/current
+# # Authorization: Bearer e7c0e607-00f0-4956-b444-1d4c6f8a3ea1
+
+# #  Update current user information
+
+# # PATCH http://localhost:3000/api/users/current
+# # Content-Type: application/json
+# # Authorization: Bearer 795243ec-daea-4a9e-8f4a-0aeb1a499bcd
+
+# # {
+# #     "name": "ilham"
+# # }
+
+# # # # Logout current user
+# # DELETE http://localhost:3000/api/users/logout
+# # Authorization: Bearer 795243ec-daea-4a9e-8f4a-0aeb1a499bcd
